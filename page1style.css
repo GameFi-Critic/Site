@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Roboto&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;  
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  background: #0B0D15;
+  padding: 10px 0;
+}
+header > .content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: auto;
+  height: 40px;
+  width: 1216px;
+}
+header > .content > .logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  height: 40px;
+}
+header > .content > .logo > .icon {
+  display: flex;
+  width: 40px;
+  z-index: 2;
+  background: #286AFC;
+  border-radius: 10px;
+}
+header > .content > .logo > .icon > p {
+  margin: auto;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+header > .content > .logo > .name {
+  display: flex;
+  margin-left: -9px;
+  background: #1D2033;
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+}
+header > .content > .logo > .name > p {
+  margin: auto 14px auto 20px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+header > .content > nav {
+  display: flex;
+  flex-direction: row;
+  margin: auto auto auto 15px;
+  gap: 53px;
+}
+header > .content > nav > a {
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+header > .content > .search {
+  width: 289px;
+  border: 0;
+  border-radius: 20px;
+  background: #DFDFDF url("img/search.svg") no-repeat scroll 17px 12px;
+  padding: 0 17px 0 41px;
+  outline: none;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #848484;
+}
+header > .content > .search::placeholder {
+  margin: auto 0;
+}
+header > .content > .search:hover {
+  color: #000000;
+  background: #DBDBDB url("img/search_hover.svg") no-repeat scroll 17px 12px;
+}
+header > .content > .search:hover::placeholder {
+  color: #000000;
+}
+header > .content > .search:focus {
+  padding: 0 17px;
+  color: #000000;
+  background-image: none;
+}
+header > .content > .search:focus::placeholder {
+  color: transparent;
+}
+header > .content > .search:active {
+  padding: 0 17px;
+  color: #000000;
+  background-image: none;
+}
+header > .content > .search:active::placeholder {
+  color: transparent;
+}
+header > .content > .sign_up {
+  border: 0;
+  display: flex;
+  margin: auto 0;
+  width: 83px;
+  height: 36px;
+  background: #286AFC;
+  border-radius: 25px;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+header > .content > .sign_up:hover {
+  background: #3867CE;
+}
+header > .content > .sign_up:active {
+  background: #598DFF;
+}
+header > .content > .sign_up:disabled {
+  background: #C0D4FF;
+}
+header > .content > .log_in {
+  display: flex;
+  margin: auto 0;
+  width: 83px;
+  height: 36px;
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  background: transparent;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+header > .content > .log_in:hover {
+  border: 1px solid #D6D6D6;
+  color: #D6D6D6;
+}
+header > .content > .log_in:active {
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.5));
+}
+header > .content > .log_in:disabled {
+  border: 1px solid #9F9F9F;
+  color: #9F9F9F;
+}
+
+.main{
+    background: #171A29;
+    padding-top: 60px;
+}
+.intro{
+    padding-top: 0px;
+}
+body{
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.register-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header__utility{
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading{
+    margin-top: 0;
+    padding-top: 40px;
+    margin-left: 352px;
+    margin-bottom: 24px;
+}
+.heading-menu{
+    margin-left: 352px;
+}
+.heading2{
+    margin-bottom: 24px;
+    padding-top: 75px;
+    margin-left: 352px;
+}
+.heading3{
+    margin-bottom: 24px;
+    margin-top: 175px;
+    margin-left: 352px;
+}
+
+.heading-game {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    margin: 16px 0;
+    color: #FFFFFF;
+}
+
+.game-intro{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    margin-left: 352px;
+}
+.new__menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 352px;
+    margin-bottom: 107px;
+}
+.new__menu2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 352px;
+    padding-bottom: 100px;
+}
+.menu-game-new{
+    margin-right: 20px;
+}
+.menu-game-new:last-child{
+    margin-right: 0;
+}
+.price-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.price{
+    margin-top: -37px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.pick{
+    max-width: 21px;
+    max-height: 21px;
+    margin-right: 8px;
+    margin-left: 93px;
+    margin-top: -37px;
+}
+.new-menu-btn{
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 12px;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    width: 85px;
+    height: 24px;
+    background: none;
+}
+.menu{
+    background: #1D2033;
+}
+.second_menu{
+    background: #171A29;
+}
+.menu__nav{
+    margin-left: 352px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: -55px;
+}
+.nav_all_btn{
+    margin-right: 352px;
+}
+.nav-menu_items{
+    color: #FFFFFF;
+    margin-right: 19px;
+}
+.nav-menu__buttons{
+    background: #2B2E3F;
+    border: none;
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    margin-left: 25px;
+}
+.articles_cards{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 352px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+    gap: 20px;
+    width: 1216px;
+}
+.articles_card{
+    background: #1D2033;
+    width: min-content;
+}
+.card-util-btn{
+    background: #2B2E3F;
+    width: 31px;
+    height: 31px;
+    border-radius: 2px;
+    border: none;
+    margin: 0 24px 20px 0;
+}
+.date{
+    margin-right: auto;
+}
+.card-util{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 24px;
+}
+.user_card{
+    height: 22px;
+    width: 22px;
+    margin-top: 0px;
+    margin-right: 6px;
+}
+.user-name{
+height: 22px;
+}
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px 24px;
+}
+.explore__menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+.explore_btn{
+    width: 598px;
+    height: 145px;
+    background: #286AFC;
+    color: #FFFFFF;
+    border-radius: 9px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 352px;
+    margin-right: 20px;
+    border: none;
+}
+.explore_btn:last-child{
+    margin-left: 0;
+}
+footer {
+  background: #0B0D15;
+  padding: 40px 0;
+}
+footer > .content {
+  display: flex;
+  flex-direction: row;
+  width: 1216px;
+  margin: 0 auto;
+  gap: 138px;
+}
+footer > .content > .logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+footer > .content > .logo > .icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background: #286AFC;
+  border-radius: 10px;
+}
+footer > .content > .logo > .icon > p {
+  margin: auto;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+footer > .content > .logo > .name {
+  display: flex;
+  height: 40px;
+  margin-left: -9px;
+  background: #1D2033;
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+}
+footer > .content > .logo > .name > p {
+  margin: auto 14px auto 20px;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+footer > .content > ul {
+  list-style: none;
+}
+footer > .content > ul > li:first-child {
+  margin-top: 0;
+}
+footer > .content > ul > li {
+  margin-top: 14px;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+footer > .content > ul > li > a {
+  text-decoration: none;
+  margin-top: 14px;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+footer > .content > .social {
+  display: flex;
+  flex-direction: row;
+  gap: 18.85px;
+  margin-top: -4px;
+  margin-left: -7px;
+}
+footer > .content > .social > a {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+footer > .content > .social > a > img {
+  margin: auto;
+}
